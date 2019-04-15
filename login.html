@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="icon" href="images\cu.jpg">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css\login.css">
+		<title>Chalkpad: Login</title>		
+</head>
+
+<body>
+	<div class="logo1">
+		<img src="images/logo.jpg" alt="">
+	</div>
+	<div class="white-div">
+		<div class="pic">			
+  			<img class="mySlides w3-animate-left" src="images/pic.jpg">
+ 			<img class="mySlides w3-animate-left" src="images/icc.jpg">
+  			<img class="mySlides w3-animate-left" src="images/green.jpg">
+  			<img class="mySlides w3-animate-left" src="images/research.jpg">
+		</div>
+		<p class="input-head">Log-In</p>
+		<div class="input">
+		    <form action="#">
+			    <p>USERNAME</p>
+			    <input type="text" id="user">
+			    <p>PASSWORD</p>
+			    <input type="text" required id="pass">
+			    <p>INSTITUTE</p>
+			    <select>
+				<option>CUIET</option>
+				<option>CCHMC</option>
+				<option>CSPA</option>
+				<option>CCN</option>
+				<option>CCSRM</option>
+				<option>CUP</option>
+				<option>CIET</option>
+				<option>PHD</option>
+				<option>CSCA</option>
+				<option>CGBC</option>
+			    </select>
+			    <p>SESSION</p>	
+			    <select>
+			    <option>2011-2012</option>
+			   	<option>2012-2013</option>
+			   	<option>2013-2014</option>
+			   	<option>2014-2015</option>
+			    <option>2015-2016</option>
+				<option>2016-2017</option>
+				<option>2017-2018</option>
+				<option>2018-2019</option>
+			     </select>
+		    </form>
+		    <button onclick="login()">LOGIN</button>
+		</div>			
+	</div>
+
+
+
+<script type="text/JavaScript">
+	
+function login() {
+	var a = document.getElementById('user').value;
+	var b = document.getElementById('pass').value;
+	if(a == "1710991638")
+	{
+		if(b == 'rajat')
+		{
+			window.location.href = "index.html";
+		}
+	}
+	else
+	{
+		alert("Invalid Input");
+	}
+
+}
+
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2500);    
+}
+
+</script>
+</body>
+</html>
