@@ -1,0 +1,50 @@
+/* logo section */
+
+.color {
+	height: 170px;
+	background: black;
+	display: block;
+}
+
+.color img {
+	display: block;
+  margin-left: 40%;
+  margin-right: 55%;
+  width: 20%;
+}
+
+.activities {
+margin-left: 5%;
+margin-right: 5%;
+}
+
+p {
+	font-size: 20px;
+	margin-left: 5%;
+}
+
+.line {
+	margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 0px;
+    height: 5px;
+    background: red;
+
+}
+
+.login {
+	margin-left: 5%;
+	background-color: #008CBA;
+	border-radius: 5px;
+	font-size: 20px;
+	padding: 10px;
+}
+
+
+@media only screen and (max-width: 480px){
+
+.color{
+	height: 50px;
+}
+
+}
