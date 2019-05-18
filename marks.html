@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="images\cu.jpg">
+	<title>Chalkpad: Student Marks</title>
+	<link rel="stylesheet" href="css\marks.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<style>
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+th, tr, td, th {
+    text-align: center;
+    border: 1px solid black;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+</style>
+</head>
+<body>
+	<div class="main-body">
+		<div class="logo">
+			<a href="index.html"><img src="images/logowhite.jpg" alt=""></a>
+			<a href="logout.html" class="btn btn-info btn-lg" onclick="logout()">
+          	<span class="glyphicon glyphicon-log-out"></span> Log out
+        	</a>
+        </div>	
+	    <br>
+
+	    <div class="running-text">
+			<marquee>Chitkara Universty hosted the prestigious ICTIEE 2019 – The Sixth International Conference on Transformation in Electronics</marquee>
+		</div><br>
+
+		<!-- Navigation bar section -->
+
+	    <div class="baring">		
+	    	<div class="dropdown">
+			<button class="dropbtn">Student Info</button>
+			<div class="dropdown-content">
+				<a href="#">Complete Info</a>
+				<a href="placement.html">Placement Info</a>
+				<a href="applyDl.html">Apply Medical Leave</a>
+				<a href="teachcomment.html">Display Teacher Comment</a>
+				<a href="#">Display Institute Notices</a>
+				<a href="instituteevents.html">Display Institute Events</a>
+				<a href="adminmsg.html">Display Admin Messeges</a>
+				<a href="alerts.html">Display All Alerts</a>
+				<a href="task.html">Task Manager</a>
+				<a href="downloads.html">Download Section</a>
+				<a href="gatePass.html">Gate Pass</a>
+				<a href="changePassword.html">Change Password</a>
+            </div>
+            </div>
+
+	        <div class="dropdown">
+            <button class="dropbtn">Facilities</button>
+			<div class="dropdown-content">
+				<a href="#">Hostel Facility</a>
+                <a href="#">Transport Facility</a>
+            </div>
+            </div>
+
+            <div class="dropdown">
+            <button class="dropbtn">Dues</button>
+			<div class="dropdown-content">
+				<a href="#">Net Banking Fess Payment</a>
+                <a href="fine.html">Fine</a>
+                <a href="fine.html">Fine Payment History</a>
+                <a href="#">Other Dues</a>
+            </div>
+            </div>
+
+            <div class="dropdown">
+            <button class="dropbtn">Academic Details</button>
+			<div class="dropdown-content">
+				<a href="timeTable.html">Time Table</a>
+                <a href="#">Resources</a>
+                <a href="#">Display Attendance</a>
+                <a href="marks.html">Display Marks</a>
+                <a href="grade.html">Display Grade Card</a>
+                <a href="#">Assignment</a>
+            </div>
+            </div>
+
+            <div class="dropdown">
+            <button class="dropbtn">Feedback/Quiz</button>
+			<div class="dropdown-content">
+				<a href="#">Student Feedback Form</a>
+                <a href="#">Advance Feedback Form</a>
+            </div>
+            </div>
+
+            <div class="dropdown">
+            <button class="dropbtn">XLPAT</button>
+            </div>
+
+            <div class="dropdown">
+            <button class="dropbtn">Hostel Checkout</button>
+            </div>
+
+            <div class="dropdown">
+            <button class="dropbtn">Online Request</button>
+            </div>
+
+            <div class="dropdown">
+            <button class="dropbtn">Registration Form</button>
+			<div class="dropdown-content">
+				<a href="#">Placement</a>
+                <a href="#">Reapper Registration Form</a>
+                <a href="#">Modular Registration Form</a>
+                <a href="#">Online Registration Form</a>
+            </div>
+            </div>
+
+         </div><br>
+
+         <div class="dashboard">
+        	Academic Details &nbsp >> &nbsp Display Marks   	
+         </div><br> 
+
+         <div class="sem">
+
+             <p>Study Period : 
+                <select>
+                    <option>4 Sem</option>
+                    <option>3 Sem</option>
+                    <option>2 Sem</option>
+                    <option>1 Sem</option>                    
+                </select>
+             <p>
+         </div><br>
+
+         <div class="marks">
+            <div class="table-responsive">
+             <table class="table">
+                <thead>
+                 <tr>
+                     <th>S No.</th>
+                     <th>Group</th>
+                     <th>Test Type</th>
+                     <th>Test Date</th>
+                     <th>Study Period</th>
+                     <th>Teacher Name</th>
+                     <th>Test</th>
+                     <th>MM</th>
+                     <th>MS</th>
+                     <th>%age</th>
+                 </tr></thead>
+
+                 <tbody><tr>
+                     <td>1</td>
+                     <td>Database Management<br>System Lab(CSP2206)</td>
+                     <td>17CS-A</td>
+                     <td>Internal</td>
+                     <td>12-Feb-19</td>
+                     <td>4 SEM</td>
+                     <td>LE1</td>
+                     <td>20</td>
+                     <td>18</td>
+                     <td>90</td>
+                 </tr>
+
+                 <tr>
+                     <td>2</td>
+                     <td>Engineering Exploration<br>(CS201)</td>
+                     <td>P17CS-A01</td>
+                     <td>Internal</td>
+                     <td>19-Feb-19</td>
+                     <td>4 SEM</td>
+                     <td>IA</td>
+                     <td>30</td>
+                     <td>30</td>
+                     <td>100</td>
+                 </tr>
+
+                  <tr>
+                     <td>3</td>
+                     <td>Software Engineering<br>(CSL3307)</td>
+                     <td>17CS-EPICS</td>
+                     <td>Internal</td>
+                     <td>26-Feb-19</td>
+                     <td>4 SEM</td>
+                     <td>ST1</td>
+                     <td>40</td>
+                     <td>35</td>
+                     <td>87.5</td>
+                 </tr>
+
+                  <tr>
+                     <td>4</td>
+                     <td>Database Management<br>System(CSL4206)</td>
+                     <td>17CS-A</td>
+                     <td>Internal</td>
+                     <td>27-Feb-19</td>
+                     <td>4 SEM</td>
+                     <td>ST1</td>
+                     <td>40</td>
+                     <td>38</td>
+                     <td>95</td>
+                 </tr>
+
+                  <tr>
+                     <td>5</td>
+                     <td>Software Engineering<br>Llab(CSP1307)</td>
+                     <td>P17C-A01</td>
+                     <td>Internal</td>
+                     <td>28-Feb-19</td>
+                     <td>4 SEM</td>
+                     <td>LE1</td>
+                     <td>30</td>
+                     <td>29</td>
+                     <td>97</td>
+                 </tr></tbody>
+             </table>
+         </div>
+</div>
+
+</body>
+</html>         
